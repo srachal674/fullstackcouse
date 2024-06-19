@@ -39,6 +39,7 @@ p {
   }
   .col-lg-4 {
     width: 33.33%;
+    position: relative;
   }
 }
 
@@ -50,6 +51,7 @@ p {
   }
   .col-md-4 {
     width: 33.33%;
+    position: relative;
   }
 }
 
@@ -73,36 +75,63 @@ p {
 }
 
 .categories {
-  float: right;
   background-color: #FFD204; /* First color for background */
   color: #00529B; /* Second color for text */
-  word-wrap: break-word;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-content p {
+  border: 1px solid lightblue;
+  background-color: #00529B;
+  color: white;
 }
 </style>
 </head>
 <body>
 <h1>Example Site</h1>
+
 <section>
   <h2>Menu</h2>
   <div id="menu" class="row">
-    <div class="col-lg-4 col-md-4 col-sm-4"><p>Item 1</p></div>
-    <div class="col-lg-4 col-md-4 col-sm-4"><p>Item 2</p></div>
-    <div class="col-lg-4 col-md-4 col-sm-4"><p>Item 3</p></div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <p>Item 1</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <p>Item 2</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <p>Item 3</p>
+    </div>
   </div>
 </section>
 
-<!-- Nested box in the upper right corner of the menu boxes -->
-<section id="categories" class="row">
-  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>Chicken</p></div>
-  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>Beef</p></div>
-  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>Sushi</p></div>
+<section>
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <div class="categories"><p>Chicken</p></div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <div class="categories"><p>Beef</p></div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <div class="categories"><p>Sushi</p></div>
+    </div>
+  </div>
 </section>
 
-<!-- Text of the menu -->
-<section id="categories">
-  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
-  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
-  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+<section id="text-content" class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4 text-content"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 text-content"><p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 text-content"><p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
 </section>
+
 </body>
 </html>
