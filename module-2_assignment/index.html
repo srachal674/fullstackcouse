@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 
-.red-hat-display-body> {
+.red-hat-display-body {
   font-family: "Red Hat Display", sans-serif;
   font-optical-sizing: auto;
   /*font-weight: <weight>;*/
@@ -47,7 +47,7 @@ h1 {
   text-align: center;
   color: #FFD204;
   font-size: 4em;
-  font-family: "Tangerine", sans-serif;
+  font-family: "Tangerine", cursive;
   text-shadow: 2px 2px 5px gray;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -82,11 +82,12 @@ section p {
 /* Responsive layout */
 .row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .col {
   padding: 10px;
+  flex: 1; /* Ensure columns take up equal space */
 }
 
 @media (min-width: 992px) {
