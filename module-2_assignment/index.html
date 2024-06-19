@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Example Site</title>
 <style>
-
 /********** Base styles **********/
 * {
   box-sizing: border-box;
@@ -25,52 +24,58 @@ p {
   color: white;
 }
 
-/* Simple Responsive Framework. */
+/* Simple Responsive Framework */
 .Menu {
-  width: 100% ;
+  width: 100%;
 }
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3{
+  .col-lg-1, .col-lg-2, .col-lg-3 {
     float: left;
     border: 1px solid gold;
+  }
+  .col-lg-3 {
+    width: 33.33%;
   }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 768px) {
-  .col-md-1, .col-md-2, .col-md-3{
+  .col-md-1, .col-md-2, .col-md-3 {
     float: left;
     border: 1px solid gold;
+  }
+  .col-md-6 {
+    width: 50%;
   }
 }
 
 /********** Small devices only **********/
 @media (min-width: 576px) {
-  .col-sm-1, .col-sm-2, .col-sm-3{
+  .col-sm-1, .col-sm-2, .col-sm-3 {
     float: left;
     border: 1px solid gold;
   }
+  .col-sm-12 {
+    width: 100%;
+  }
 }
+
 #menu {
-  color:lightyellow;
+  color: lightyellow;
 }
 </style>
 </head>
 <body>
 <h1>Example Site</h1>
-  <nav>
-    <h2>Menu</h2>
-    <div id = "menu" class="row">
-      <div class="col-lg-3 col-md-6"><p>Item 1</p></div>
-      <div class="col-lg-3 col-md-6"><p>Item 2</p></div>
-      <div class="col-lg-3 col-md-6"><p>Item 3</p></div>
-      
-    </div>
-  </nav>
-
-
-
+<nav>
+  <h2>Menu</h2>
+  <div id="menu" class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12"><p>Item 1</p></div>
+    <div class="col-lg-3 col-md-6 col-sm-12"><p>Item 2</p></div>
+    <div class="col-lg-3 col-md-6 col-sm-12"><p>Item 3</p></div>
+  </div>
+</nav>
 </body>
 </html>
