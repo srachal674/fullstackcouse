@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Example Site</title>
+<title>Module 2 Solution</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -13,133 +13,91 @@
   box-sizing: border-box;
 }
 
-.red-hat-display-h1 {
-  font-family: "Red Hat Display", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin-bottom: 15px;
-  color: navy;
-  font-weight: bold;
+body {
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
   text-align: center;
-  font-size: 75px;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-p {
-  border: 2px solid lightblue;
-  background-color: #00529B;
-  width: 100%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+/* Section styling */
+section {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+  background-color: #e0e0e0;
+  position: relative;
 }
 
-/* Simple Responsive Framework */
+section p {
+  margin: 0;
+  padding: 10px;
+}
+
+.section-title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #FFD204;
+  color: #00529B;
+  padding: 5px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+/* Responsive layout */
 .row {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4 {
-    float: left;
-    border: 1px thick #FFD204;
-  }
+.col {
+  padding: 10px;
+}
+
+@media (min-width: 992px) {
   .col-lg-4 {
     width: 33.33%;
-    position: relative;
   }
 }
 
-/********** Medium devices only **********/
-@media (min-width: 768px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4 {
-    float: left;
-    border: 1px thick #FFD204;
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
   }
-  .col-md-4 {
-    width: 33.33%;
-    position: relative;
-  }
-}
-
-/********** Small devices only **********/
-@media (min-width: 576px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4 {
-    float: left;
-    border: 1px thick #FFD204;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-12 {
+  .col-md-12 {
     width: 100%;
   }
 }
 
-#menu {
-  color: lightyellow;
-  width: 100%;
-}
-
-.categories {
-  background-color: #FFD204; /* First color for background */
-  color: #00529B; /* Second color for text */
-  width: 40%;
-  height: 40%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+@media (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
   }
-
-.text {
-  padding: 5px;
-  border: 1px solid ;
-  background-color: #00529B;
-  color: white;
-  margin: 0;
-  position: left;
-  box-sizing: border-box;
 }
 </style>
 </head>
 <body>
-  <h1 class="red-hat-display-h1">Menu</h1>
-  <section class="col-lg-4 col-md-4 col-sm-4">
-    <div id="menu" class="row">
-      <div class="categories" class="col-lg-4 col-md-4 col-sm-4">
-        <p>Chicken</p>
-        <div class="text" class="col-lg-4 col-md-4 col-sm-4">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
+  <h1>Our Menu</h1>
+  <div class="row">
+    <section class="col col-lg-4 col-md-6 col-sm-12">
+      <div class="section-title">Chicken</div>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </section>
+    <section class="col col-lg-4 col-md-6 col-sm-12">
+      <div class="section-title">Beef</div>
+      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </section>
+    <section class="col col-lg-4 col-md-12 col-sm-12">
+      <div class="section-title">Sushi</div>
+      <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </section>
+  </div>
 </body>
 </html>
-
- <!--<section id="text" class="row">
-    <div class="col-lg-4 col-md-4 col-sm-4 text-content"></div>
-    <div class="col-lg-4 col-md-4 col-sm-4 text-content"></div>
-    <div class="col-lg-4 col-md-4 col-sm-4 text-content"></div>
-  </section>-->
-
-<!--<div class="categories" class="col-lg-4 col-md-4 col-sm-4"><p>Beef</p>
-  <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4">
-  <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  <div class="categories">
-    <p>Sushi</p>
-  </div>
-</div>-->
