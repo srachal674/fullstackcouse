@@ -4,13 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Example Site</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 <style>
 /********** Base styles **********/
 * {
   box-sizing: border-box;
 }
-h1 {
+
+.red-hat-display-h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 15px;
+  color: navy;
+  font-weight: bold;
 }
 
 p {
@@ -96,7 +106,7 @@ p {
 </style>
 </head>
 <body>
-<h1>Example Site</h1>
+<h1 class="red-hat-display-h1">Example Site</h1>
 
 <section>
   <h2>Menu</h2>
