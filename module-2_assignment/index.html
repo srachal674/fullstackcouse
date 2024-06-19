@@ -22,57 +22,68 @@ p {
   margin-left: auto;
   font-family: Helvetica;
   color: white;
-  text-align: center;
+}
+
+/* Simple Responsive Framework */
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4 {
+    float: left;
+    border: 1px thick #FFD204;
+  }
   .col-lg-4 {
     width: 33.33%;
-    float: left;
-    border: 1px solid #FFD204;
   }
 }
 
-/* Medium devices only */
+/********** Medium devices only **********/
 @media (min-width: 768px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4 {
+    float: left;
+    border: 1px thick #FFD204;
+  }
   .col-md-4 {
     width: 33.33%;
-    float: left;
-    border: 1px solid #FFD204;
   }
 }
 
 /********** Small devices only **********/
 @media (min-width: 576px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4 {
+    float: left;
+    border: 1px thick #FFD204;
+  }
   .col-sm-4 {
     width: 33.33%;
-    float: left;
-    border: 1px solid #FFD204;
+  }
+  .col-sm-12 {
+    width: 100%;
   }
 }
 
 #menu {
   color: lightyellow;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .categories {
   float: right;
-  color: #FFD204;
-  text-wrap: wrap;
-  color: #00529B;
+  background-color: #FFD204; /* First color for background */
+  color: #00529B; /* Second color for text */
+  word-wrap: break-word;
 }
-
 </style>
 </head>
 <body>
 <h1>Example Site</h1>
 <section>
   <h2>Menu</h2>
-
   <div id="menu" class="row">
     <div class="col-lg-4 col-md-4 col-sm-4"><p>Item 1</p></div>
     <div class="col-lg-4 col-md-4 col-sm-4"><p>Item 2</p></div>
@@ -80,18 +91,18 @@ p {
   </div>
 </section>
 
-/*This is the nested box that should be in the upper right corner of the menu boxes.
-<section div id="catagories" class="row">
-  <div class="col-lg-4 col-md-4 col-sm-4"><p>Chicken</p></div>
-  <div id="dish" class="col-lg-4 col-md-4 col-sm-4"><p>Beef</p></div>
-  <div id="dish" class="col-lg-4 col-md-4 col-sm-4"><p>Sushi</p></div>
+<!-- Nested box in the upper right corner of the menu boxes -->
+<section id="categories" class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>Chicken</p></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>Beef</p></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>Sushi</p></div>
 </section>
 
-/*Text of the menu.
-<section div id="catagories" p>
-  <div class="col-lg-4 col-md-4 col-sm-4"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
-  <div id="dish" class="col-lg-4 col-md-4 col-sm-4"><p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p></div>
-  <div id="dish" class="col-lg-4 col-md-4 col-sm-4"><p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+<!-- Text of the menu -->
+<section id="categories">
+  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 categories"><p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
 </section>
 </body>
 </html>
