@@ -34,8 +34,6 @@ p {
   margin-left: auto;
   font-family: Helvetica;
   color: white;
-  position: relative;
-  padding: 15px;
 }
 
 /* Simple Responsive Framework */
@@ -94,13 +92,24 @@ p {
   width: 40%;
   height: 40%;
   position: absolute;
-  top: 10px; /* Adjusted for spacing */
-  right: 10px; /* Adjusted for spacing */
+  top: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 5px; /* Ensure some padding inside the nested box */
   border: 2px solid #00529B; /* Added border */
+  box-sizing: border-box;
+}
+
+.text-content p {
+  border: 1px solid lightblue;
+  background-color: #00529B;
+  color: white;
+  margin: 0;
+  padding: 15px; /* Adjust padding as needed */
+  position: relative;
   box-sizing: border-box;
 }
 </style>
@@ -111,27 +120,30 @@ p {
   <h1 class="red-hat-display-h1">Menu</h1>
   <div id="menu" class="row">
     <div class="col-lg-4 col-md-4 col-sm-4">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        <div class="categories">
-          <p>Chicken</p>
-        </div>
-      </p>
+      <Lorem>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div class="categories">
+        <p>Chicken</p>
+      </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4">
-      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-        <div class="categories">
-          <p>Beef</p>
-        </div>
-      </p>
+      <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <div class="categories">
+        <p>Beef</p>
+      </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4">
-      <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        <div class="categories">
-          <p>Sushi</p>
-        </div>
-      </p>
+      <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="categories">
+        <p>Sushi</p>
+      </div>
     </div>
   </div>
+</section>
+
+<section id="text-content" class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4 text-content"></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 text-content"></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 text-content"></div>
 </section>
 
 </body>
