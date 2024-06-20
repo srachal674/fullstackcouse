@@ -56,7 +56,6 @@ section {
 /* Row styling */
 .row {
   width: 100%;
-  overflow: hidden; /* Clearfix */
 }
 
 /* Column styling */
