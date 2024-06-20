@@ -87,14 +87,12 @@ section {
     width: 50%;
   }
   .col-12 {
-    float: left;
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
   .col-12 {
-    float: left;
     width: 100%;
   }
 }
