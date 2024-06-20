@@ -19,15 +19,13 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Section styling */
 section {
   border: 1px solid black;
   margin: 10px;
   padding: 20px;
   position: relative;
-  background-color: #00529B;
-  color: #FFD204;
-
+  background-color: #00529B; /* Background color */
+  color: #FFD204; /* Text color */
 }
 
 .section-title1 {
@@ -83,12 +81,13 @@ section {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .col-6 {
     float: left;
     width: 50%;
   }
   .col-12 {
+    float: left;
     width: 100%;
   }
 }
