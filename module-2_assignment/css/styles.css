@@ -25,30 +25,9 @@ section {
   margin: 10px;
   padding: 20px;
   position: relative;
-}
-
-.section1 {
   background-color: #00529B;
-}
-
-.section1 p {
   color: #FFD204;
-}
 
-.section2 {
-  background-color: #00529B;
-}
-
-.section2 p {
-  color: #FFD204;
-}
-
-.section3 {
-  background-color: #00529B;
-}
-
-.section3 p {
-  color: #FFD204;
 }
 
 .section-title1 {
