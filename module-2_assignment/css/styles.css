@@ -63,7 +63,9 @@ section {
 
 /* Row styling */
 .row {
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  gap: 20px; /* Add spacing between menu items */
 }
 
 /* Clearfix */
@@ -75,7 +77,6 @@ section {
 
 .col {
   padding: 10px;
-  float: 1; /* Ensure columns take up equal space */
 }
 
 @media (min-width: 992px) {
