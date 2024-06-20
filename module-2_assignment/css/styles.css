@@ -67,11 +67,11 @@ section {
 }
 
 /* Clearfix */
-.row::after {
+/*.row::after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 .col {
   padding: 10px;
