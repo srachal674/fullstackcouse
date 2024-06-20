@@ -74,14 +74,16 @@ section {
 }
 
 /* Responsive layout */
-@media (min-width: 992px) {
+/* For Large devices */
+@media (min-width: 1200px) {
   .col {
     float: left;
     width: 33.33%;
   }
 }
 
-@media (min-width: 768px) {
+/* For Medium devices */
+@media (min-width: 992px) and (max-width: 1199px) {
   .col-6 {
     float: left;
     width: 50%;
@@ -91,6 +93,7 @@ section {
   }
 }
 
+/* Small devices */
 @media (max-width: 767px) {
   .col-12 {
     width: 100%;
