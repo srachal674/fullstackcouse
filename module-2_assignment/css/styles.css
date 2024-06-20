@@ -67,15 +67,15 @@ section {
 }
 
 /* Clearfix */
-/*.row::after {
+.row::after {
   content: "";
   display: table;
   clear: both;
-}*/
+}
 
 .col {
   padding: 10px;
-  /*float: 1; /* Ensure columns take up equal space */
+  float: 1; /* Ensure columns take up equal space */
 }
 
 @media (min-width: 992px) {
