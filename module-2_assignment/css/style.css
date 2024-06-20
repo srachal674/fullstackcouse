@@ -1,0 +1,106 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00529B;
+    font-size: 4em;
+    font-family: "Tangerine", cursive;
+    text-shadow: 2px 2px 5px gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Section styling */
+  section {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    background-color: #00529B;
+    position: relative;
+  }
+  
+  section p {
+    margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
+    padding: 10px;
+    color: #FFD204;
+  }
+  
+  .section-title1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFD204;
+    color: #00529B;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+  .section-title2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: gray;
+    color: blue;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+
+  .section-title3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+  
+  /* Row styling */
+  .row {
+    width: 100%;
+  }
+  
+  /* Clearfix */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout */
+  @media (min-width: 992px) {
+    .col {
+      float: left;
+      width: 33.33%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-6 {
+      float: left;
+      width: 50%;
+    }
+    .col-12 {
+      float: left;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .col-12 {
+      float: left;
+      width: 100%;
+    }
+  }
+  

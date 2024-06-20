@@ -4,127 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Module 2 Solution</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-<style>
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-}
-
-.red-hat-display-body {
-  font-family: "Red Hat Display", sans-serif;
-  font-optical-sizing: auto;
-  /*font-weight: <weight>;*/
-  font-style: normal;
-}
-
-.tangerine-regular {
-  font-family: "Tangerine", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.tangerine-bold {
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-
-body {
-  background-color: white;
-  font-family: "Red Hat Display", sans-serif;
-  margin: 0;
-}
-
-h1 {
-  text-align: center;
-  color: #00529B;
-  font-size: 4em;
-  font-family: "Tangerine", cursive;
-  text-shadow: 2px 2px 5px gray;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* Section styling */
-section {
-  border: 2px solid black;
-  margin: 10px;
-  padding: 20px;
-  background-color: #00529B;
-  position: relative;
-}
-
-section p {
-  margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
-  padding: 10px;
-  color: #FFD204;
-}
-
-.section-title {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #FFD204;
-  color: #00529B;
-  padding: 10px;
-  border: 2px solid whitesmoke;
-  font-weight: bold;
-}
-
-/* Responsive layout */
-.row {
-  display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping */
-}
-
-.col {
-  padding: 10px;
-  flex: 1; /* Ensure columns take up equal space */
-}
-
-@media (min-width: 992px) {
-  .col-lg-4 {
-    width: 33.33%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .col-sm-12 {
-    width: 100%;
-  }
-}
-</style>
+<link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="red-hat-display-body">
+<body>
   <h1>Our Menu</h1>
   <div class="row">
-    <section class="col col-lg-4 col-md-6 col-sm-12">
-      <div class="section-title">Chicken</div>
+    <section class="col col-6 col-12">
+      <div class="section-title1">Chicken</div>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     </section>
-    <section class="col col-lg-4 col-md-6 col-sm-12">
-      <div class="section-title">Beef</div>
+    <section class="col col-6 col-12">
+      <div class="section-title2">Beef</div>
       <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
     </section>
-    <section class="col col-lg-4 col-md-12 col-sm-12">
-      <div class="section-title">Sushi</div>
+    <section class="col col-12">
+      <div class="section-title3">Sushi</div>
       <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </section>
   </div>
