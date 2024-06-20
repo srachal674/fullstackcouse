@@ -71,6 +71,7 @@ section {
 .col {
   float: left;
   padding: 10px;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
 }
 
 @media (min-width: 992px) {
