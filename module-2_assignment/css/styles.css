@@ -26,39 +26,31 @@ section {
   position: relative;
   background-color: #00529B; /* Background color */
   color: #FFD204; /* Text color */
+  min-height: 150px; /* Ensures sections have some height */
+}
+
+.section-title1, .section-title2, .section-title3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  border: 2px solid black;
+  font-weight: bold;
 }
 
 .section-title1 {
-  position: absolute;
-  top: 0;
-  right: 0;
   background-color: #FFD204;
   color: #00529B;
-  padding: 10px;
-  border: 2px solid black;
-  font-weight: bold;
 }
 
 .section-title2 {
-  position: absolute;
-  top: 0;
-  right: 0;
   background-color: gray;
   color: black;
-  padding: 10px;
-  border: 2px solid black;
-  font-weight: bold;
 }
 
 .section-title3 {
-  position: absolute;
-  top: 0;
-  right: 0;
   background-color: purple;
   color: white;
-  padding: 10px;
-  border: 2px solid black;
-  font-weight: bold;
 }
 
 /* Row styling */
@@ -74,12 +66,14 @@ section {
   box-sizing: border-box; /* Ensure padding doesn't affect the width */
 }
 
+/* Desktop view */
 @media (min-width: 992px) {
   .col-lg-4 {
     width: 33.33%;
   }
 }
 
+/* Tablet view */
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-6 {
     width: 50%;
@@ -90,6 +84,7 @@ section {
   }
 }
 
+/* Mobile view */
 @media (max-width: 767px) {
   .col-sm-12 {
     width: 100%;
