@@ -73,19 +73,19 @@ section {
   clear: both;
 }
 
-/* Responsive layout */
-/* For Large devices */
-@media (min-width: 1200px) {
-  .col-lg-6 {
-    /*float: left;*/
+.col {
+  padding: 10px;
+  float: 1; /* Ensure columns take up equal space */
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
     width: 33.33%;
   }
 }
 
-/* For Medium devices */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md-6 {
-    /*float: left;*/
     width: 50%;
   }
   .col-md-12 {
@@ -93,10 +93,8 @@ section {
   }
 }
 
-/* Small devices */
-/*@media (max-width: 991px) {
+@media (max-width: 767px) {
   .col-sm-12 {
-    float: left:
     width: 100%;
   }
-}*/
+}
