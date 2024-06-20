@@ -63,19 +63,15 @@ section {
 
 /* Row styling */
 .row {
-  width: auto;
+  width: 100%;
+  overflow: hidden; /* Clearfix */
 }
 
-/* Clearfix */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* Column styling */
 .col {
+  float: left;
   padding: 10px;
-  }
+}
 
 @media (min-width: 992px) {
   .col-lg-4 {
@@ -89,11 +85,13 @@ section {
   }
   .col-md-12 {
     width: 100%;
+    clear: both; /* Ensure the full-width column starts on a new line */
   }
 }
 
 @media (max-width: 767px) {
   .col-sm-12 {
     width: 100%;
+    clear: both; /* Ensure each column starts on a new line */
   }
 }
