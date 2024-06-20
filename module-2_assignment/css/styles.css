@@ -79,7 +79,6 @@ section {
   .col-lg-6 {
     float: left;
     width: 33.33%;
-    margin-left: auto;
   }
 }
 
@@ -88,11 +87,9 @@ section {
   .col-md-6 {
     float: left;
     width: 50%;
-    margin-left: auto;
   }
   .col-md-12 {
     width: 100%;
-    margin-left: auto;
   }
 }
 
@@ -101,7 +98,5 @@ section {
   .col-sm-12 {
     float: left:
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }*/
