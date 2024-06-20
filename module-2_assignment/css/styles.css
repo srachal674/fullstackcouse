@@ -80,7 +80,6 @@ section {
     float: left;
     width: 33.33%;
     margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -90,12 +89,10 @@ section {
     float: left;
     width: 50%;
     margin-left: auto;
-    margin-right: auto;
   }
   .col-md-12 {
     width: 100%;
     margin-left: auto;
-    margin-right: auto;
   }
 }
 
