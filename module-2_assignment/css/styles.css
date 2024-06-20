@@ -94,7 +94,7 @@ section {
 }
 
 /* Small devices */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .col-12 {
     width: 100%;
   }
