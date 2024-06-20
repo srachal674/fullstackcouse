@@ -63,8 +63,7 @@ section {
 
 /* Row styling */
 .row {
-  display: grid;
-  float: inherit;
+  width: auto;
 }
 
 /* Clearfix */
