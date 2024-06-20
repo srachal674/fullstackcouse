@@ -73,19 +73,19 @@ section {
   clear: both;
 }
 
-.col {
-  padding: 10px;
-  float: 1; /* Ensure columns take up equal space */
-}
-
-@media (min-width: 992px) {
-  .col-lg-4 {
+/* Responsive layout */
+/* For Large devices */
+@media (min-width: 1200px) {
+  .col-lg-6 {
+    /*float: left;*/
     width: 33.33%;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+/* For Medium devices */
+@media (min-width: 992px) and (max-width: 1199px) {
   .col-md-6 {
+    /*float: left;*/
     width: 50%;
   }
   .col-md-12 {
@@ -93,8 +93,10 @@ section {
   }
 }
 
-@media (max-width: 767px) {
+/* Small devices */
+/*@media (max-width: 991px) {
   .col-sm-12 {
+    float: left:
     width: 100%;
   }
-}
+}*/
