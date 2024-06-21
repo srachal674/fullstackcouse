@@ -19,14 +19,19 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Section styling */
 section {
-  background-color: #00529B; /* Background color */
-  color: #FFD204; /* Text color */
-  border: 1px solid black;
-  margin: 5px;
-  padding: 5px;
+  border: 2px solid white;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 20px;
+  background-color: #00529B;
   position: relative;
-  
+}
+section p {
+  margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
+  padding: 10px;
+  color: #FFD204;
 }
 
 .section-title1 {
