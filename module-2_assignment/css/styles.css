@@ -35,7 +35,7 @@ section {
   background-color: #FFD204;
   color: #00529B;
   padding: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
   font-weight: bold;
 }
 
@@ -46,7 +46,7 @@ section {
   background-color: gray;
   color: black;
   padding: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
   font-weight: bold;
 }
 
@@ -57,7 +57,7 @@ section {
   background-color: purple;
   color: white;
   padding: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
   font-weight: bold;
 }
 
@@ -76,7 +76,7 @@ section {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-6 {
     float: left;
     width: 50%;
@@ -88,6 +88,7 @@ section {
 
 @media (max-width: 767px) {
   .col-12 {
+    float: left;
     width: 100%;
   }
 }
