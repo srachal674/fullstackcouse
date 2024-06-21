@@ -80,7 +80,7 @@ section p {
   width: 30%; /* Adjust width as needed to fit all boxes in one row */
   margin: 10px; /* Adjust margin as needed */
   padding: 20px; /* Adjust padding as needed */
-  text-align: center; /* Centers text inside the box */
+  text-align: left; /* Centers text inside the box */
   border: 1px solid #ccc; /* Adjust border as needed */
   box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
