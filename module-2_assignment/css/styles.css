@@ -77,9 +77,9 @@ section p {
 /* Responsive layout */
 .col {
   float: left;
-  width: 20%; /* Adjust width as needed to fit all boxes in one row */
-  margin: 10px; /* Adjust margin as needed */
-  padding: 20px; /* Adjust padding as needed */
+  width: 5%; /* Adjust width as needed to fit all boxes in one row */
+  margin: 5px; /* Adjust margin as needed */
+  padding: 10px; /* Adjust padding as needed */
   text-align: left; /* Centers text inside the box */
   border: 1px solid #ccc; /* Adjust border as needed */
   box-sizing: border-box; /* Ensure padding and border are included in the width */
