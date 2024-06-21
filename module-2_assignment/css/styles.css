@@ -34,6 +34,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px; /* Adjust gap as needed */
+  padding: 20px; /* Adjust padding as needed */
 }
 section p {
   margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
