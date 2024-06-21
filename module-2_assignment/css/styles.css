@@ -15,6 +15,14 @@ h1 {
   margin-bottom: 20px;
 }
 
+.box {
+  background-color: lightgrey; /* Adjust background color as needed */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center; /* Centers text inside the box */
+  border: 1px solid #ccc; /* Adjust border as needed */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
 /* Section styling */
 section {
   border: 2px solid white;
@@ -23,6 +31,9 @@ section {
   padding: 20px;
   background-color: #00529B;
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Adjust gap as needed */
 }
 section p {
   margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
