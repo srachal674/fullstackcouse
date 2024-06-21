@@ -71,7 +71,7 @@ section p {
 .row::after {
   content: "";
   display: table;
-  clear: none;
+  clear: left;
 }
 
 /* Responsive layout */
