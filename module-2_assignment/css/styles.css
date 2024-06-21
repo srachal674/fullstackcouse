@@ -70,7 +70,7 @@ section p {
 /* Clearfix */
 .row::after {
   content: "";
-  display: table;
+  display: box;
   clear: left;
 }
 
