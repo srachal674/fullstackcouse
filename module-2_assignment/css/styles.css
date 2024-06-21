@@ -19,60 +19,46 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Section styling */
 section {
   border: 1px solid black;
   margin: 10px;
   padding: 20px;
   position: relative;
-}
-
-.section1 {
-  background-color: #00529B;
-}
-
-.section1 p {
-  color: #FFD204;
-}
-
-.section2 {
-  background-color: #CCCCCC;
-}
-
-.section2 p {
-  color: black;
-}
-
-.section3 {
-  background-color: #800080;
-}
-
-.section3 p {
-  color: white;
-}
-
-.section-title1, .section-title2, .section-title3 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  border: 2px solid black;
-  font-weight: bold;
+  background-color: #00529B; /* Background color */
+  color: #FFD204; /* Text color */
 }
 
 .section-title1 {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: #FFD204;
   color: #00529B;
+  padding: 10px;
+  border: 1px solid black;
+  font-weight: bold;
 }
 
 .section-title2 {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: gray;
   color: black;
+  padding: 10px;
+  border: 1px solid black;
+  font-weight: bold;
 }
 
 .section-title3 {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: purple;
   color: white;
+  padding: 10px;
+  border: 1px solid black;
+  font-weight: bold;
 }
 
 /* Clearfix */
@@ -84,14 +70,14 @@ section {
 
 /* Responsive layout */
 @media (min-width: 992px) {
-  .col {
+  .col-lg-4 {
     float: left;
     width: 33.33%;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-6 {
+@media (min-width: 768px) {
+  .col-md- {
     float: left;
     width: 50%;
   }
@@ -102,8 +88,6 @@ section {
 
 @media (max-width: 767px) {
   .col-12 {
-    float: left;
     width: 100%;
   }
 }
- 
