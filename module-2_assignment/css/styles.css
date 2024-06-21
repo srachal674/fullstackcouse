@@ -74,9 +74,24 @@ section p {
   border: 1px solid black;
   font-weight: bold;
 }
+.container {
+  width: 100%;
+  overflow: hidden; /* Ensure the container wraps around floated elements */
+  padding: 20px; /* Adjust padding as needed */
+}
 
-/* Clearfix */
-.row::after {
+.col {
+  float: left;
+  width: 30%; /* Adjust width as needed to fit all boxes in one row */
+  margin: 10px; /* Adjust margin as needed */
+  background-color: lightgrey; /* Adjust background color as needed */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center; /* Centers text inside the box */
+  border: 1px solid #FFD204; /* Adjust border as needed */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.container::after {
   content: "";
   display: table;
   clear: both;
@@ -91,7 +106,7 @@ section p {
 }
 
 @media (min-width: 768px) {
-  .col-md- {
+  .col-md-6 {
     float: left;
     width: 50%;
   }
