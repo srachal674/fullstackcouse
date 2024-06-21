@@ -62,11 +62,11 @@ section {
 }
 
 /* Clearfix */
-.row::after {
+/*.row::after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 /* Responsive layout */
 @media (min-width: 992px) {
