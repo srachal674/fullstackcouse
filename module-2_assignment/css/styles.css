@@ -1,76 +1,60 @@
-/* Base styles */
+/* General Styles */
 body {
-  background-color: #00529B;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: #f5f5f5; /* Set the body background color */
   margin: 0;
+  padding: 0;
 }
 
 h1 {
   text-align: center;
-  color: #00529B;
-  font-size: 4em;
-  font-family: "Tangerine", cursive;
-  text-shadow: 2px 2px 5px gray;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-.box {
-  background-color: #00529B; /* Adjust background color as needed */
+.container {
+  width: 100%;
+  overflow: hidden; /* Ensure the container wraps around floated elements */
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #fff; /* Set the background color of the container */
+}
+
+.col {
+  float: left;
+  width: 30%; /* Adjust width as needed to fit all boxes in one row */
+  margin: 10px; /* Adjust margin as needed */
+  background-color: lightgrey; /* Adjust background color as needed */
   padding: 20px; /* Adjust padding as needed */
   text-align: center; /* Centers text inside the box */
   border: 1px solid #FFD204; /* Adjust border as needed */
   box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
-/* Section styling */
-section {
-  border: 2px solid white;
-  border: 2px solid black;
-  margin: 10px;
-  padding: 20px;
-  background-color: #00529B;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Adjust gap as needed */
-  padding: 20px; /* Adjust padding as needed */
-}
-section p {
-  margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
-  padding: 10px;
-  color: #FFD204;
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.section-title1 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #FFD204;
-  color: #00529B;
-  padding: 10px;
-  border: 1px solid black;
-  font-weight: bold;
+/* Responsive layout */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
 }
 
-.section-title2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: gray;
-  color: black;
-  padding: 10px;
-  border: 1px solid black;
-  font-weight: bold;
+@media (min-width: 768px) {
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
 
-.section-title3 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: purple;
-  color: white;
-  padding: 10px;
-  border: 1px solid black;
-  font-weight: bold;
+@media (max-width: 767px) {
+  .col-12 {
+    width: 100%;
+  }
 }
