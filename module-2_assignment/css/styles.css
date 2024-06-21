@@ -79,7 +79,6 @@ section p {
   float: left;
   width: 30%; /* Adjust width as needed to fit all boxes in one row */
   margin: 10px; /* Adjust margin as needed */
-  background-color: lightgrey; /* Adjust background color as needed */
   padding: 20px; /* Adjust padding as needed */
   text-align: center; /* Centers text inside the box */
   border: 1px solid #ccc; /* Adjust border as needed */
