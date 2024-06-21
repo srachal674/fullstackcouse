@@ -1,8 +1,4 @@
 /* Base styles */
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: white;
   font-family: "Red Hat Display", sans-serif;
