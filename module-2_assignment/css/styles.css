@@ -1,4 +1,8 @@
 /* Base styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   font-family: "Red Hat Display", sans-serif;
@@ -15,14 +19,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-.box {
-  background-color: #00529B; /* Adjust background color as needed */
-  padding: 20px; /* Adjust padding as needed */
-  text-align: center; /* Centers text inside the box */
-  border: 1px solid #FFD204; /* Adjust border as needed */
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
-}
-
 /* Section styling */
 section {
   border: 2px solid white;
@@ -31,10 +27,6 @@ section {
   padding: 20px;
   background-color: #00529B;
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Adjust gap as needed */
-  padding: 20px; /* Adjust padding as needed */
 }
 section p {
   margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
@@ -73,4 +65,35 @@ section p {
   padding: 10px;
   border: 1px solid black;
   font-weight: bold;
+}
+
+/* Clearfix */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md- {
+    float: left;
+    width: 50%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-12 {
+    width: 100%;
+  }
 }
