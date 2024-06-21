@@ -23,8 +23,8 @@ h1 {
 section {
   border: 2px solid white;
   border: 2px solid black;
-  margin: 5px;
-  padding: 5px;
+  margin: 15px;
+  padding: 20px;
   background-color: #00529B;
   position: relative;
 }
@@ -77,7 +77,7 @@ section p {
 /* Responsive layout */
 .col {
   float: left;
-  width: 30%; /* Adjust width as needed to fit all boxes in one row */
+  width: 20%; /* Adjust width as needed to fit all boxes in one row */
   margin: 10px; /* Adjust margin as needed */
   padding: 20px; /* Adjust padding as needed */
   text-align: left; /* Centers text inside the box */
