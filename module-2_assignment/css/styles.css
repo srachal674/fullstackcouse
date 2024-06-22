@@ -51,7 +51,7 @@ section {
 .section:nth-child(3) p {
   margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
   padding: 10px;
-  position: absolute; /* Position the paragraph absolutely */
+  position: relative; /* Position the paragraph absolutely */
   top: 50%; /* Move the paragraph down by 50% of the section's height */
   transform: translateY(-50%); /* Adjust the position to center the paragraph vertically */
 }
