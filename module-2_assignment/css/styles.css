@@ -25,6 +25,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
   justify-items: center;
+  margin: 10px;
 }
 
 /* Section styling */
