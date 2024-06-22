@@ -47,9 +47,10 @@ section {
 }
 
 .section p {
+  position: relative;
   margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
   padding: 10px;
-  border: 5px;
+  
 }
 
 .section-title1 {
