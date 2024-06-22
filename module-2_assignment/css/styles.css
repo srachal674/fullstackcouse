@@ -79,8 +79,8 @@ div > section > p {
 /* Clearfix */
 .clearfix::after {
   content: "";
-  display: center;
-  clear: none;
+  display: table;
+  clear: both;
 }
 
 @media (min-width: 992px) {
