@@ -20,25 +20,32 @@ h1 {
   margin-bottom: 20px;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+}
+
 /* Section styling */
-section {
+.section {
   background-color: #00529B;
   color: #FFD204;
   border: 5px solid #FFD204;
   margin: 10px;
   padding: 10px;
-  width: calc(33.33% - 20px);
+  width: 100%;
   box-sizing: border-box;
   float: left;
   height: 200px; /* Set a fixed height for all section boxes */
   position: relative; /* Set position to relative for positioning child elements */
 }
 
-div > section:nth-child(3n+1) {
-  clear: left;
+.section:nth-child(3n+1) {
+  clear: both;
 }
 
-div > section > p {
+.section p {
   margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
   padding: 10px;
 }
@@ -85,56 +92,27 @@ div > section > p {
 
 /* Desktop view */
 @media (min-width: 1200px) {
-  .col-4 {
-    float: left;
-    padding: 15px;
-    width: 33.33%;
-  }
-
-  .col-8 {
-    float: left;
-    padding: 15px;
-    width: 66.66%;
-  }
-}
-
-/*Medium size devices */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .col-4 {
-    float: left;
-    padding: 15px;
-    width: 33.33%;
-  }
-
-  .col-8 {
-    float: left;
-    padding: 15px;
-    width: 66.66%;
+  .section {
+    width: calc(100% / 3);
   }
 }
 
 /* Tablet view */
-@media (min-width: 768px) and (max-width: 991px) {
-  .section:nth-child(3) {
-    clear: both;
-  }
-
-  .col-4 {
-    float: left;
-    padding: 15px;
-    width: 33.33%;
-  }
-  
-  .col-8 {
-    float: left;
-    padding: 15px;
-    width: 66.66%;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    width: calc(100% / 2);
   }
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+/* Mobile view */
+@media (max-width: 767px) {
   .section {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
   }
 }
