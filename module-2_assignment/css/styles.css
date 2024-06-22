@@ -25,6 +25,8 @@ section {
   background-color: #00529B;
   color: #FFD204;
   border: 1px solid black;
+  margin: 10px;
+  position: relative;
   padding: 10px;
   box-sizing: border-box;
 }
