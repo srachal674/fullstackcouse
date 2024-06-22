@@ -26,7 +26,7 @@ section {
   color: #FFD204;
   border: 5px solid #FFD204;
   margin: 10px;
-  position: left;
+  position: absolute;
   padding: 10px;
   width: 33.33%;
   float: left;
@@ -35,6 +35,7 @@ section {
 div > section > p {
   margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
   padding: 10px;
+  float: left;
 }
 
 .section-title1 {
