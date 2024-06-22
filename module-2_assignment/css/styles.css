@@ -25,7 +25,6 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
   justify-items: center;
-  margin: 10px;
 }
 
 /* Section styling */
@@ -47,10 +46,8 @@ section {
 }
 
 .section p {
-  position: center;
-  margin: 40px 40px 40px 40px 40px; /* Add margin to the paragraph to push it away from the title box */
+  margin-top: 40px; /* Add margin to the paragraph to push it away from the title box */
   padding: 10px;
-  
 }
 
 .section-title1 {
