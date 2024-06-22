@@ -30,6 +30,8 @@ section {
   width: calc(33.33% - 20px);
   box-sizing: border-box;
   float: left;
+  height: 200px; /* Set a fixed height for all section boxes */
+  position: relative; /* Set position to relative for positioning child elements */
 }
 
 div > section:nth-child(3n+1) {
@@ -50,6 +52,7 @@ div > section > p {
   padding: 10px;
   border: 3px solid black;
   font-weight: bold;
+  z-index: 1; /* Ensure titles are above section boxes */
 }
 
 .section-title2 {
@@ -61,6 +64,7 @@ div > section > p {
   padding: 10px;
   border: 3px solid black;
   font-weight: bold;
+  z-index: 1; /* Ensure titles are above section boxes */
 }
 
 .section-title3 {
@@ -72,6 +76,7 @@ div > section > p {
   padding: 10px;
   border: 3px solid black;
   font-weight: bold;
+  z-index: 1; /* Ensure titles are above section boxes */
 }
 
 /* Clearfix */
