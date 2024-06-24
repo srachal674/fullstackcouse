@@ -70,7 +70,7 @@ section {
 /* Ensure columns take full width */
 .col {
   flex: 1;
-  padding: 15px; /* This should match the negative margin on the row */
+  /*padding: 5px; /* This should match the negative margin on the row */
   box-sizing: border-box;
 }
 
