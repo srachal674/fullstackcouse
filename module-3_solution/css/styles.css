@@ -89,7 +89,7 @@ section {
   width: 100%; /* Ensures the box width is adjusted for padding */
 }
 
-h3 {
+h4 {
   text-align: center; /* Center the titles */
 }
 
@@ -97,7 +97,7 @@ h3 {
 h2 {
   text-align: center;
   color: #00529B;
-  font-size: 4em;
+  font-size: 5em;
   text-shadow: 2px 2px 5px gray;
   margin-top: 20px;
   margin-bottom: 20px;
