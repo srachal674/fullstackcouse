@@ -16,6 +16,7 @@ header {
 nav {
   display: flex;
   background-color: gray; 
+  font-size: medium;
   color:black;
   justify-content: space-between;
   align-items: center;
