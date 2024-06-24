@@ -61,21 +61,17 @@ section {
   margin-bottom: 3rem !important;
 }
 
-.container {
+/* Ensure container and row are full width */
+.container, .row {
   width: 100%;
   box-sizing: border-box;
-  
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px; /* Negative margin to counteract the padding on the container */
-}
-
+/* Ensure columns take full width */
 .col {
   flex: 1;
   padding: 15px; /* This should match the negative margin on the row */
+  box-sizing: border-box;
 }
 
 .p-3 {
@@ -83,21 +79,21 @@ section {
 }
 
 .box {
-  display: flex;
+  flex: 1;
   margin: 10px; /* Adjust the margin as needed */
   padding: 20px; /* Adjust the padding as needed */
   box-sizing: border-box; 
-  border-width: 3px solid;
-  border-color: #ffD204;/* Include padding and border in the element's total width and height */
-  width: calc(100% - 40px);
+  border: 3px solid #ffD204; /* Corrected syntax */
   background-color: #00529B;
-  color:#ffD204; /* Adjust the width based on your margin and padding */
+  color: #ffD204; /* Adjust the width based on your margin and padding */
+  width: calc(100% - 40px); /* Ensures the box width is adjusted for padding */
 }
 
 h3 {
   text-align: center; /* Center the titles */
 }
 
+/* h2 Styling */
 h2 {
   text-align: center;
   color: #00529B;
