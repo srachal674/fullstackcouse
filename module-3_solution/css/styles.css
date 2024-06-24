@@ -86,7 +86,7 @@ section {
   border: 3px solid #ffD204; /* Corrected syntax */
   background-color: #00529B;
   color: #ffD204; /* Adjust the width based on your margin and padding */
-  width: calc(100% - 40px); /* Ensures the box width is adjusted for padding */
+  width: 100%; /* Ensures the box width is adjusted for padding */
 }
 
 h3 {
@@ -103,6 +103,7 @@ h2 {
   margin-bottom: 20px;
 }
 
+/*Box paragraph style*/
 .box p {
   color: #ffD204;
   text-align: left; /* Align paragraphs to the left */
