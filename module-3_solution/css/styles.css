@@ -1,6 +1,6 @@
 @import "bootstrap";
   
-//Navigation bar formatting
+/*Navigation bar formatting*/
 .navbar {
   background-color: gray;
   color: #000000;
@@ -60,7 +60,7 @@
   color: rgb(35, 5, 230);
 }
 
-//Body formatting
+/*Body formatting*/
 
 body {
   background-color: white;
@@ -107,17 +107,19 @@ a:active {
 }
 
 .text-body-secondary {
+  font-size: 4em;
   color: black;
   text-align: left;
-  
+
 }
-  h2 {
-    text-align: left;
-    color: black;
-    font-size: 4em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+
+h2 {
+  text-align: center;
+  color: #00529B;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
   h3 {
     color: #00529B;
