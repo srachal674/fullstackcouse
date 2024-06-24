@@ -1,5 +1,15 @@
 @import "bootstrap";
 
+h2 {
+    text-align: center;
+    color: #00529B;
+    font-size: 4em;
+    font-family: "Tangerine", cursive;
+    text-shadow: 2px 2px 5px gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
 //Navigation bar formatting
 .top-nav {
     background-color: rgba($color: #461D7C, $alpha: 1.0);
