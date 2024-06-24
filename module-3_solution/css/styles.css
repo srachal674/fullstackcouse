@@ -61,7 +61,29 @@ body {
   margin: 0;
   padding: 0;
 }
- 
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  padding: 1em;
+  text-align: center;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+} 
 /* unvisited link */
 a:link {
   color: rgb(11, 6, 116);
@@ -253,3 +275,15 @@ input {
 
   .navbar-collapse {
     display:
+  }
+
+  * Mobile Styles */
+@media (max-width: 768px) {
+    section {
+        padding: 1em;
+    }
+
+    article {
+        margin-bottom: 2em;
+    }
+}

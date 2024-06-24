@@ -1,9 +1,11 @@
-<html>
-
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 3 Soulution</title>
+    <title>Food, LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -11,110 +13,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    </head>
-
-  <body>
-    <nav class="navbar navbar-default">
-        <a class="navbar-brand">Food, LLC</a>
-        <div class="container">
-            <button class="navbar-toggler me-auto ms-auto d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-3">
+        <h1>Food, LLC</h1>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-                    <a class="dropdown-item" href="#">Chicken</a>
-                    <a class="dropdown-item" href="#">Beef</a>
-                    <a class="dropdown-item" href="#">Sushi</a>
-                </div>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chicken">Chicken</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beef">Beef</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sushi">Sushi</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-      </nav>
-      <p class="text-center">Our Menu</p>
-    
-    <div class= "box">
-        <h3>Chicken</h3>
-        <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    </div>
-  
-   <!--  <div class="box">
-        <h3>Beef</h3>
-        <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    </div>
-
-    <div class="box">
-        <h3>Sushi</h3>
-        <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    </div>
-
-    <div class="box">
-        <h4></h4>
-        <p>
-      
-        </p>
-    </div>
-
-    <div class="box">
-
-
-    </div>
-
-    <br class="clear" />
-
-    <div class="box">
-        <h4></h4>
-        <img src="" class="full-width" />
-        <p>
-
-        </p>
-    </div>
-
-    <div class="box">
-        <h4></h4>
-        <img src="" class="full-width" /> 
-        <p>
-          
-        </p>
-    </div>
-
-    <br class="clear" />
-
-    <div class="box">
-        <h4></h4>
-        <img src="" class="full-width" />
-        <p>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <section id="menu-content">
+            <h2 class="text-center">Our Menu</h2>
+            <article id="chicken" class="mt-5">
+                <h3>Chicken</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </article>
+            <article id="beef" class="mt-5">
+                <h3>Beef</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </article>
+            <article id="sushi" class="mt-5">
+                <h3>Sushi</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </article>
             
-        </p>
-    </div>
-
-    <div class="box">
-        <h4></h4>
-        <img src="" class="full-width" />
-        <p>
-        
-        </p>
-    </div>
-
-    <br class="clear" />
-
-    <div class="box">
-        <h4></h4>
-        <img src="" class="full-width" />
-        <p>
-          
-        </p>
-    </div>
-
-    <br class="clear" />
-
-    <div class="box">
-        <h4></h4>
-        <img src="" class="full-width" />
-        <p>
-          
-        </p>
-    </div> -->
-         
-    
-    </body>
-
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
