@@ -22,6 +22,11 @@ nav {
   align-items: center;
 }
 
+/* Style for the navbar-brand to make the text larger */
+.navbar-brand {
+  font-size: 2rem; /* Adjust the font size as needed */
+}
+
 /* Centering menu items in the navbar */
 .navbar-nav {
   display: flex;
