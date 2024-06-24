@@ -98,7 +98,8 @@ h1{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-h2 {
+
+.text-center {
   text-align: center;
   color: #00529B;
   font-size: 2em;
