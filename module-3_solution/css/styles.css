@@ -15,8 +15,8 @@ header {
 /* Navigation Styles */
 nav {
   display: flex;
-  background-color: lightgray 
-  color(black; red green blue);
+  background-color: gray; 
+  color:black; ;
   justify-content: space-between;
   align-items: center;
 }
@@ -84,7 +84,7 @@ section {
   padding: 1rem !important;
 }
 
-.mt-5 box {
+.box {
   margin: 10px; /* Adjust the margin as needed */
   padding: 20px; /* Adjust the padding as needed */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
