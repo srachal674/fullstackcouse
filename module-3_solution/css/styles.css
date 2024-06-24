@@ -89,23 +89,6 @@ a:active {
   color: rgb(9, 125, 9);
 }
 
-.btn-secondary {
-  background-color: transparent;
-  border: 1px solid black;
-  color: black;
-}
-
-.btn-secondary:focus,
-.btn-secondary:active {
-  outline: none;
-  box-shadow: none;
-}
-
-.btn-secondary:hover {
-  background-color: black;
-  color: white;
-}
-
 .navbar-brand {
   font-family: "Red Hat Display", sans-serif;
   font-size: 4em;
@@ -123,16 +106,16 @@ h2 {
   margin-bottom: 20px;
 }
 
-  h3 {
-    color: #00529B;
-    text-align: center;
-  }
+h3 {
+  color: #00529B 
+  text-align: center;
+}
 
-  h4{
-    color:  #461D7C;
-    font-style: bold;
-    font-size: 26px;
-  }
+h4{
+  color:  #461D7C;
+  font-style: bold;
+  font-size: 26px;
+}
 
 .card {
   background-color: white;
