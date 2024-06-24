@@ -108,8 +108,7 @@ h1{
 }
 
 h3 {
-  color: #ffd204; 
-  text-align: center;
+  color: #ffd204;
 }
 
 h4{
@@ -121,7 +120,7 @@ h4{
 .box{
   background-color: #00529B;
   box-shadow: 0 1px 0 black);
-  border: 3px #FFD204;
+  border: 5px #FFD204;
   border-style: solid;
   margin: 40px;
   padding: 0;
