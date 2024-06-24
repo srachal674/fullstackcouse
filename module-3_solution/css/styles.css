@@ -8,44 +8,7 @@
   
 }
 
-.navbar-expand {
-  @each $breakpoint in map-keys($grid-breakpoints) {
-    $next: breakpoint-next($breakpoint, $grid-breakpoints);
-    $infix: breakpoint-infix($next, $grid-breakpoints);
-
-    // stylelint-disable-next-line scss/selector-no-union-class-name
-    &#{$infix} {
-      @include media-breakpoint-up($next) {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-
-        .navbar-nav {
-          flex-direction: row;
-
-          .dropdown-menu {
-            position: absolute;
-          }
-
-          .nav-link {
-            padding-right: var(--#{$prefix}navbar-nav-link-padding-x);
-            padding-left: var(--#{$prefix}navbar-nav-link-padding-x);
-          }
-        }
-
-        .navbar-nav-scroll {
-          overflow: visible;
-        }
-
-        .navbar-collapse {
-          display: flex !important; // stylelint-disable-line declaration-no-important
-          flex-basis: auto;
-        }
-
-        .navbar-toggler {
-          display: none;
-        }
-
-  .top-nav {
+.top-nav {
     background-color: rgba($color: #461D7C, $alpha: 1.0);
     color: rgba(253, 208, 35, 1.0);
     border-bottom-color: rgb(249, 233, 171);
@@ -155,7 +118,7 @@ a:active {
 
   h2 {
     text-align: center;
-    color: #00529B;
+    color: #00529b;
     font-size: 4em;
     font-family: "Tangerine", cursive;
     text-shadow: 2px 2px 5px gray;
