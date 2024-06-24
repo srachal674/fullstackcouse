@@ -40,11 +40,18 @@ section {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: ; /* Your container background color */
+  padding: 0 15px;
+  margin: 0 auto; /* Your container background color */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 - 15px;
+}
+
+.col {
+  flex: 1;
+  padding: 15px; /* This should match the negative margin on the row */
 }
 
 .p-3 {
@@ -52,9 +59,11 @@ section {
 }
 
 .box {
-  border: 3px solid #ffD204; /* Border for each box */
-  border-radius: 0.25rem;
-  background-color: #00529B; /* Background color for the boxes */
+  margin: 10px; /* Adjust the margin as needed */
+  padding: 20px; /* Adjust the padding as needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: calc(100% - 40px); /* Adjust the width based on your margin and padding */
+  background-color: #00529B;
 }
 
 .box h2, .box h3 {
@@ -68,13 +77,15 @@ section {
   line-height: 1.6; /* Improve readability with line height */
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-  section {
-      padding: 1em;
+/* Ensure the boxes are responsive */
+@media (min-width: 768px) {
+  .box {
+    width: calc(100% - 80px); /* Adjust for larger screens, if needed */
   }
+}
 
-  article {
-      margin-bottom: 2em;
+@media (min-width: 1024px) {
+  .box {
+    width: calc(100% - 120px); /* Adjust for even larger screens, if needed */
   }
 }
