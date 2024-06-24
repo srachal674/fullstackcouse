@@ -1,37 +1,188 @@
-<div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
-    <h1></h1>
-     <% @grams.each do |gram| %>
-       <div class="card">
-         <div class="handle"><%= gram.user.email %></div>
-         <%= image_tag gram.photos.to_s, class: 'img-fluid' %>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet">
+    
+
+    <title>Module 3 Soulution</title>
+    </head>
+
+  <body>
+    <a name="top" class="anchor"> </a>
+
+    <div class="about-container">
+      <ul>
+          <li><a href="#" class="nav-link">Item</a></li>
+        <li><a href="#code-samples" class="nav-link">Item</a></li>
+        <li><a href="#web-apps" class="nav-link">Item</a></li>
+        <li><a href="#skills-and-tools" class="nav-link">Item</a></li>
+          <li class="hire-me"><a href="#hire-me" class="nav-link">Item </a></li>
+        </ul>
+
+      <div class="about">
+        <img src="me.jpg" class="me" />
+      
+
+        <h1></h1>
+
+      
+        <h2></h2>
+      
+        <hr class="grey"/>
+        <p class="bio"> 
+          
+        </p>
+      </div>
+    </div>
+
+    <h3 id="code-samples"></h3>
+    <hr class="blue"/>
+
+  <div class= "box">
+      <h4>Temperature Conversion</h4>
+      <p>
+
+      </p>
+  </div>
+
+  <br class= "clear" />
+
+  <div class="box">
+
+
+  </div>
+
+  <div class="box">
+     <h4></h4>
+    <p>
+      
+    </p>
+  </div>
+
+  <br class="clear" />
+
+  <div class="box">
+      <h4></h4>
+    <p>
+      
+    </p>
+  </div>
+
+  <div class="box">
+
+
+  </div>
+
+  <br class="clear" />
+
+  <h3 id="web-apps"></h3>
+  <hr class="blue" />
+
+    <div class="box">
+      <h4></h4>
+      <a href="https://splurty-shannon-rachal.herokuapp.com/" target="_blank">
+        <img src="splurty.png" class="full-width" />
+      </a>
          <p>
-           <%= gram.message %>
-         </p>
-   
-         <div class="gram-actions float-right">
-           <% if current_user && current_user == gram.user %>
-             <%= link_to 'Edit', edit_gram_path(gram) %>
-             <%= link_to 'Destroy', gram_path(gram), method: :delete, data: {confirm: 'Are you sure?'} %>
-           <% end %>
-         </div>
-         <br class="clear-fix" />
-         <div class="comments">
-           <h3>Comments</h3>
-           <% gram.comments.each do |comment| %>
-             <div class="comment">
-               <span class="comment_handle">
-                 <%= comment.user.email %>
-               </span>
-   
-               <%= comment.message %>
-             </div>
-           <% end %>
-           <h4>Add a comment</h4>
-           <%= simple_form_for Comment.new, url: gram_comments_path(gram) do |f| %>
-             <%= f.input :message %>
-             <%= f.submit 'Add Comment', class: 'my-btn' %>
-           <% end %>
-         </div>
-       </div>
-     <% end %>
-   </div>
+           
+          </p>
+        </div>
+
+    <div class="box">
+        <h4>Yelp Clone</h4>
+        <a href="https://nomster-sr.herokuapp.com/" target="_blank">
+          <img src="nomster.png" class="full-width" />
+        </a>  
+          <p>
+            
+          </p>
+      </div>
+
+      <br class="clear" />
+
+      <div class="box">
+        <h4></h4>
+        <a href="https://flixter-shannon-rachal.herokuapp.com/" target="_blank">
+          <img src="flixter.png" class="full-width" />
+        </a>
+          <p>
+            
+          </p>
+      </div>
+
+      <div class="box">
+        <h4></h4>
+        <a href="https://grammable-shannon-rachal.herokuapp.com/" target="_blank">
+          <img src="grammable.png" class="full-width" />
+        </a>
+          <p>
+            
+          </p>
+      </div>
+
+      <br class="clear" />
+
+      <div class="box">
+        <h4></h4>
+        <a href="https://todo-shannon-rachal.herokuapp.com/" target="_blank">
+          <img src="todoster.png" class="full-width" />
+        </a>
+          <p>
+            
+          </p>
+      </div>
+
+      <div class="box">
+        <h4></h4>
+        <img src="#" class="full-width" />
+        <p>
+          
+        </p>
+      </div>
+
+      <br class="clear" />
+
+      <h3 id="skills-and-tools"> &amp; </h3>
+        <hr class="blue"/>
+
+        <p class="skills-and-tools">
+          
+        </p>
+
+      <div class="icons">
+      <img src="github.png" class="icon" />
+        <img src="rubocop.png" class="icon" />
+        <img src="trello.png" class="icon" />
+        <img src="slack.png" class="icon" />
+        <img src="codeship.png" class="icon" />
+
+        <br class="clear" />
+        <img src="skills.png" class="icon"/>
+
+      </div>
+      
+    </div>
+    
+    <div class="contact-me" id="hire-me">
+       <h3 class="contact-headline">Contact</h3>
+    
+      <hr class="blue" />
+      <p class="contact-info">
+          
+        </p>
+
+        <p>
+            <a href="" class="contact-link">
+             
+            </a>
+        </p>
+        
+      </div>
+    
+  </body>
+
+</html>
