@@ -84,7 +84,7 @@ section {
   padding: 1rem !important;
 }
 
-.box {
+.mt-5 box {
   margin: 10px; /* Adjust the margin as needed */
   padding: 20px; /* Adjust the padding as needed */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
