@@ -117,7 +117,7 @@ h4{
   font-size: 26px;
 }
 
-.card {
+.box{
   background-color: white;
   border-radius: .25rem;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
@@ -126,7 +126,7 @@ h4{
   padding: 0;
 }
 
-.card p, .card .message {
+.box p, .box .message {
   font-size: 25px;
   margin: 20px;
 }
