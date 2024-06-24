@@ -66,7 +66,7 @@ section {
   padding: 0 15px; /* Adjust based on your design */
   margin: 0 auto;
   box-sizing: border-box;
-  border-color: #ffD204;
+  
 }
 
 .row {
@@ -87,7 +87,9 @@ section {
 .box {
   margin: 10px; /* Adjust the margin as needed */
   padding: 20px; /* Adjust the padding as needed */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  box-sizing: border-box; 
+  border-width: 3px solid;
+  border-color: #ffD204;/* Include padding and border in the element's total width and height */
   width: calc(100% - 40px);
   background-color: #00529B;
   color:#ffD204; /* Adjust the width based on your margin and padding */
