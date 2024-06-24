@@ -63,8 +63,6 @@ section {
 
 .container {
   width: 100%;
-  padding: 0 15px; /* Adjust based on your design */
-  margin: 0 auto;
   box-sizing: border-box;
   
 }
@@ -85,6 +83,7 @@ section {
 }
 
 .box {
+  display: flex;
   margin: 10px; /* Adjust the margin as needed */
   padding: 20px; /* Adjust the padding as needed */
   box-sizing: border-box; 
