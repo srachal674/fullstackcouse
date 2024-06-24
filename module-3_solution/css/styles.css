@@ -1,70 +1,13 @@
-@import "bootstrap";
-  
-/*Navigation bar formatting*/
-.navbar {
-  background-color: gray;
-  color: #000000;
-  
-}
+/* styles.css */
 
-/*.top-nav {
-    background-color: rgba($color: #461D7C, $alpha: 1.0);
-    color: gray;
-    border-bottom-color: rgb(249, 233, 171);
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    height: 105px;
-    //padding-top: 5px;
-    font-family: 'Red Hat Display', sans-serif;
-    //padding-left: 14px;
-    //text-align: center;
-}
-
-.top-nav .add a {
-    font-weight: bold;
-    font-size: 16px;
-    padding-left: 8px;
-    //text-align: center;
-}
-
-.top-nav .add {
-  margin-top: 40px;
-}*/S
-
-
-/* unvisited link */
-.top-nav a:link {
-  color: rgb(199, 198, 198);
-}
-
-/* visited link */
-.top-nav a:visited {
-  color: rgb(8, 191, 8);
-} 
-
-/* mouse over link */
-.top-nav a:hover {
-  color: rgb(108, 95, 249);
-}
-
-/* selected link */
-.top-nav a:active {
-  color: rgb(35, 5, 230);
-}
-
-/*Body formatting*/
-
+/* General Styles */
 body {
-  background-color: white;
-  font-family: "Red Hat Display", sans-serif;
-  color: black;
+  font-family: "Red Hat Display", sans-serif; /* Keep your font settings */
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #333;
-  color: white;
   padding: 1em;
   text-align: center;
 }
@@ -83,79 +26,7 @@ main {
 section {
   max-width: 800px;
   margin: 0 auto;
-} 
-/* unvisited link */
-a:link {
-  color: rgb(11, 6, 116);
-}
-
-/* visited link */
-a:visited {
-  color: rgb(255, 255, 255);
-}
-
-/* mouse over link */
-a:hover {
-  color: rgb(70, 3, 37);
-}
-
-/* selected link */
-a:active {
-  color: rgb(9, 125, 9);
-}
-
-.navbar-brand {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 3em;
-  font-weight: bold;
-  color: black;
-  text-align: left;
-  margin: 20px;
-
-}
-
-h1{
-  text-align: center;
-  color: black;
-  font-size: 3em;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.text-center {
-  text-align: center;
-  color: #00529B;
-  font-size: 2em;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  text-align: center;
-  color: #ffd204;
-}
-
-h4{
-  color:  #461D7C;
-  font-style: bold;
-  font-size: 26px;
-}
-
-.container {
-  box-shadow: 1px 1px 0 black;
-  border: 5px #FFD204;
-  border-style: solid;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  color: white;
-}
-
-.bg-light {
-  background-color: #00529B; !important;
+  text-align: left; /* Align paragraphs to the left */
 }
 
 .mt-5 {
@@ -167,138 +38,43 @@ h4{
   margin-bottom: 3rem !important;
 }
 
-.text-left {
-  margin: 20px;
-}
-
-.card.form {
-  margin-top: 25px;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 50px;
-}
-
-.handle {
-  margin: 10px;
-  color: #000000;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-label {
-  color: #000000;
-  font-size: 26px;
-  font-weight: bold;
-}
- 
-input {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.my-btn {
-  background-color: #461D7C;
+.container {
   width: 100%;
-  border: solid;
-  border-width: thin;
-  border-color: #FDD023;
-  font-size: 24px;
-  color: white;
-  margin-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: ; /* Your container background color */
 }
 
-.input.boolean {
-  margin-left: 18px;
-  margin-top: 5px;
+.p-3 {
+  padding: 1rem !important;
 }
 
-.input.boolean label {
-  margin-top: 5px;
-  line-height: 44px;
+.box {
+  border: 3px solid #ffD204; /* Border for each box */
+  border-radius: 0.25rem;
+  background-color: #00529B; /* Background color for the boxes */
 }
 
-.gram-actions a {
-  font-weight: bold;
-  font-size: 18px;
-  margin-right:  20px;
-  margin-left:20px;
-  float: left;
+.box h2, .box h3 {
+  text-align: center; /* Center the titles */
 }
 
-.card.form {
-  padding: 20px;
+.box p {
+  color: #ffD204;
+  text-align: left; /* Align paragraphs to the left */
+  margin: 0.5rem 0; /* Add some margin for better readability */
+  line-height: 1.6; /* Improve readability with line height */
 }
 
-.comments {
-  padding: 20px;
-}
-
-.comment_handle {
-  color: #125688;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.comment{
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-@media (min-width: 768px) {
-  .navbar-nav .nav-link {
-    padding-right: var(--navbar-nav-link-padding-x);
-    padding-left: var(--navbar-nav-link-padding-x);
-  }
-
-  .navbar-nav-scroll {
-    overflow: visible;
-  }
-
-  .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-  }
-
-  .navbar-toggler {
-    display: none;
-  }
-
-  .top-nav {
-    height: 105px;
-  }
-
-  .brand {
-    padding-left: 38px;
-  }
-
-  .card {
-    margin-top: 40px;
-  }
-
-  /* Add more specific styles for tablet view here */
-}
-
-@media (min-width: 992px) {
-  .navbar-nav .nav-link {
-    padding-right: var(--navbar-nav-link-padding-x);
-    padding-left: var(--navbar-nav-link-padding-x);
-  }
-
-  .navbar-nav-scroll {
-    overflow: visible;
-  }
-
-  .navbar-collapse {
-    display:
-  }
-
-  * Mobile Styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
-    section {
-        padding: 1em;
-    }
+  section {
+      padding: 1em;
+  }
 
-    article {
-        margin-bottom: 2em;
-    }
+  article {
+      margin-bottom: 2em;
+  }
 }
