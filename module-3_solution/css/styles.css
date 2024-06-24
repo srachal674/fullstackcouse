@@ -1,22 +1,4 @@
 @import "bootstrap";
-h1 {
-  text-align: left;
-  color: black;
-  font-size: 4em;
-  font-family: "Red Hat Display", sans-serif;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-h2 {
-    text-align: center;
-    color: #00529B;
-    font-size: 4em;
-    font-family: "Tangerine", cursive;
-    text-shadow: 2px 2px 5px gray;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
   
 //Navigation bar formatting
 .top-nav {
@@ -76,7 +58,7 @@ h2 {
 body {
   background: image-url("dark-brick-background.jpg") ;
   background-size: auto;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Tangerine', serif;
   font-weight: bold;
   color: rgb(33, 4, 91)
 }
@@ -101,32 +83,27 @@ a:active {
   color: rgb(9, 125, 9);
 }
 
-
   h1 {
-    color: #461D7C; 
-    text-shadow: 2px 2px #FDD023;
-    font-style: bold;
-    font-size: 50px;
-    padding: 5px;
+    text-align: left;
+    color: black;
+    font-size: 4em;
+    font-family: "Red Hat Display", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   h2 {
-    color: rgb(199, 196, 196); 
-    text-shadow: 2px 2px black;
-    font-style: bold;
-    font-size: 40px;
-  }
-
-  h3 {
-    color: #FDD023; 
-    text-shadow: 2px 2px #461D7C;
-    font-style: bold;
-    font-size: 30px;
+    text-align: center;
+    color: #00529B;
+    font-size: 4em;
+    font-family: "Tangerine", cursive;
+    text-shadow: 2px 2px 5px gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   h4{
     color:  #461D7C;
-    //text-shadow: 1px 2px #FDD023;
     font-style: bold;
     font-size: 26px;
   }
@@ -216,40 +193,4 @@ input {
 .comment{
   font-size: 16px;
   margin-top: 5px;
-}<div class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
-<h1></h1>
- <% @grams.each do |gram| %>
-   <div class="card">
-     <div class="handle"><%= gram.user.email %></div>
-     <%= image_tag gram.photos.to_s, class: 'img-fluid' %>
-     <p>
-       <%= gram.message %>
-     </p>
-
-     <div class="gram-actions float-right">
-       <% if current_user && current_user == gram.user %>
-         <%= link_to 'Edit', edit_gram_path(gram) %>
-         <%= link_to 'Destroy', gram_path(gram), method: :delete, data: {confirm: 'Are you sure?'} %>
-       <% end %>
-     </div>
-     <br class="clear-fix" />
-     <div class="comments">
-       <h3>Comments</h3>
-       <% gram.comments.each do |comment| %>
-         <div class="comment">
-           <span class="comment_handle">
-             <%= comment.user.email %>
-           </span>
-
-           <%= comment.message %>
-         </div>
-       <% end %>
-       <h4>Add a comment</h4>
-       <%= simple_form_for Comment.new, url: gram_comments_path(gram) do |f| %>
-         <%= f.input :message %>
-         <%= f.submit 'Add Comment', class: 'my-btn' %>
-       <% end %>
-     </div>
-   </div>
- <% end %>
-</div>
+}
