@@ -62,12 +62,12 @@
 }
 
 //Body formatting
+
 body {
-  background: image-url("dark-brick-background.jpg") ;
-  background-size: auto;
-  font-family: 'Tangerine', serif;
-  font-weight: bold;
-  color: rgb(33, 4, 91)
+  background-color: white;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
 }
  
 /* unvisited link */
@@ -107,23 +107,17 @@ a:active {
   color: white;
 }
 
-  h1 {
+  h2 {
     text-align: left;
     color: black;
     font-size: 4em;
-    font-family: "Red Hat Display", sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 
-  h2 {
+  h3 {
+    color: #00529B;
     text-align: center;
-    color: #00529b;
-    font-size: 4em;
-    font-family: "Tangerine", cursive;
-    text-shadow: 2px 2px 5px gray;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 
   h4{
