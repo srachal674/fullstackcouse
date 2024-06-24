@@ -12,12 +12,25 @@ header {
   text-align: center;
 }
 
+/* Navigation Styles */
 nav {
   display: flex;
+  background-color: lightgray 
+  color(black; red green blue);
   justify-content: space-between;
   align-items: center;
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+}
+
+.nav-item {
+  text-align: center; /* Center the text inside each item */
+}
+
+/* Main Styles */
 main {
   padding: 1em;
   text-align: center;
@@ -40,13 +53,15 @@ section {
 
 .container {
   width: 100%;
-  padding: 0 15px;
-  margin: 0 auto; /* Your container background color */
+  padding: 0 15px; /* Adjust based on your design */
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 - 15px;
+  margin: 0 -15px; /* Negative margin to counteract the padding on the container */
 }
 
 .col {
@@ -63,7 +78,6 @@ section {
   padding: 20px; /* Adjust the padding as needed */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   width: calc(100% - 40px); /* Adjust the width based on your margin and padding */
-  background-color: #00529B;
 }
 
 .box h2, .box h3 {
