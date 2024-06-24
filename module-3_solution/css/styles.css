@@ -1,4 +1,12 @@
 @import "bootstrap";
+h1 {
+  text-align: left;
+  color: black;
+  font-size: 4em;
+  font-family: "Red Hat Display", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 h2 {
     text-align: center;
