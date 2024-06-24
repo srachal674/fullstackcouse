@@ -48,7 +48,7 @@ main {
 }
 
 section {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: left; /* Align paragraphs to the left */
 }
