@@ -97,7 +97,8 @@ section {
 }
 
 h4 {
-  text-align: center; /* Center the titles */
+  text-align: center;
+  color: white; /* Center the titles */
 }
 
 /* h2 Styling */
