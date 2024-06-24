@@ -113,14 +113,23 @@ h2 {
 }
 
 /* Ensure the boxes are responsive */
+/* Essential for smaller screens */
+@media (min-width: 576px) {
+  .box-xs{
+    width: calc(100% - 40px); /* Adjust for smaller screens, if needed */
+  }
+}
+
+/* Essential for tablets and larger screens */
 @media (min-width: 768px) {
-  .box {
+  .box-sm{
     width: calc(100% - 80px); /* Adjust for larger screens, if needed */
   }
 }
 
-@media (min-width: 1024px) {
-  .box {
+/* Essential for desktop and laptop screens */
+@media (min-width: 992px) {
+  .box-md {
     width: calc(100% - 120px); /* Adjust for even larger screens, if needed */
   }
 }
