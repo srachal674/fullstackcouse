@@ -2,7 +2,6 @@
   
 //Navigation bar formatting
 .navbar {
-  
   background-color: gray;
   color: #000000;
   
@@ -107,6 +106,11 @@ a:active {
   color: white;
 }
 
+.text-body-secondary {
+  color: black;
+  text-align: left;
+  
+}
   h2 {
     text-align: left;
     color: black;
