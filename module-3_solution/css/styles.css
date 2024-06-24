@@ -143,13 +143,28 @@ h4{
 }
 
 .container {
-  background-color: #00529B;
   box-shadow: 1px 1px 0 black;
   border: 5px #FFD204;
   border-style: solid;
-  margin: 20px;
-  padding: 0;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   color: white;
+}
+
+.bg-light {
+  background-color: #00529B; !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
 }
 
 .text-left {
