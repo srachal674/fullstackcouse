@@ -24,7 +24,8 @@ nav {
 
 /* Style for the navbar-brand to make the text larger */
 .navbar-brand {
-  font-size: 2rem; /* Adjust the font size as needed */
+  font-size: 3rem; 
+  font-weight: bold;/* Adjust the font size as needed */
 }
 
 /* Centering menu items in the navbar */
