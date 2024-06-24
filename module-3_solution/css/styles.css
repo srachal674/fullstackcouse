@@ -1,8 +1,4 @@
 @import "bootstrap";
-<<<<<<< HEAD
-
-=======
->>>>>>> 8651728ed1e4b986ac7c3717be5247d44b2a9876
   
 //Navigation bar formatting
 .navbar {
@@ -131,6 +127,23 @@ a:active {
   color: rgb(9, 125, 9);
 }
 
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn-secondary:focus,
+.btn-secondary:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  background-color: black;
+  color: white;
+}
+
   h1 {
     text-align: left;
     color: black;
@@ -141,16 +154,6 @@ a:active {
   }
 
   h2 {
-<<<<<<< HEAD
-    text-align: center;
-    color: #00529B;
-    font-size: 4em;   
-    font-family: "Tangerine", cursive;
-    text-shadow: 2px 2px 5px gray;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    }
-=======
     text-align: center;
     color: #00529B;
     font-size: 4em;
@@ -159,7 +162,6 @@ a:active {
     margin-top: 20px;
     margin-bottom: 20px;
   }
->>>>>>> 8651728ed1e4b986ac7c3717be5247d44b2a9876
 
   h4{
     color:  #461D7C;
@@ -252,9 +254,51 @@ input {
 .comment{
   font-size: 16px;
   margin-top: 5px;
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> 8651728ed1e4b986ac7c3717be5247d44b2a9876
+@media (min-width: 768px) {
+  .navbar-nav .nav-link {
+    padding-right: var(--navbar-nav-link-padding-x);
+    padding-left: var(--navbar-nav-link-padding-x);
+  }
+
+  .navbar-nav-scroll {
+    overflow: visible;
+  }
+
+  .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .top-nav {
+    height: 105px;
+  }
+
+  .brand {
+    padding-left: 38px;
+  }
+
+  .card {
+    margin-top: 40px;
+  }
+
+  /* Add more specific styles for tablet view here */
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    padding-right: var(--navbar-nav-link-padding-x);
+    padding-left: var(--navbar-nav-link-padding-x);
+  }
+
+  .navbar-nav-scroll {
+    overflow: visible;
+  }
+
+  .navbar-collapse {
+    display:
