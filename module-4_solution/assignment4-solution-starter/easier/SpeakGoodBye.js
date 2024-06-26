@@ -4,6 +4,8 @@
   // the "speak" method and which you will expose to the global context
   var byeSpeaker = {};
 
+  var speakWord = "Good Bye";
+
   /**
    * Logs a farewell message to the console.
    *
@@ -21,4 +23,3 @@
 })(window);
 
 // DO NOT attach the speakWord variable to the 'byeSpeaker' object.
-var speakWord = "Good Bye";

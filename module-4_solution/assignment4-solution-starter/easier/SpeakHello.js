@@ -3,6 +3,8 @@
 (function (window) {
   var helloSpeaker = {};
 
+  var speakWord = "Hello";
+
 // STEP 5: Expose the 'helloSpeaker' object to the global scope. Name it
 // 'helloSpeaker' on the global scope as well.
   helloSpeaker.speak = function (name) {
@@ -16,6 +18,5 @@
 })(window);
 
 // DO NOT attach the speakWord variable to the 'helloSpeaker' object.
-var speakWord = "Hello";
 
 
