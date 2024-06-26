@@ -2,12 +2,6 @@
 // See Lecture 52, part 2
 (function (window) {
   var helloSpeaker = {};
-/**
- * Logs a greeting message to the console.
- *
- * @param {string} name - The name to be included in the greeting.
- * @return {void} This function does not return a value.
- */
 
 // STEP 5: Expose the 'helloSpeaker' object to the global scope. Name it
 // 'helloSpeaker' on the global scope as well.
